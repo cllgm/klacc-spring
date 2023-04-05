@@ -1,0 +1,65 @@
+*{margin: 0; padding: 0;}
+.slider {
+	width: 1440px;
+	height: 590px;
+	margin: 0 auto;
+}
+
+.slider .slick-slide> div{
+	margin: 20px;
+}
+.slider .slick-slide div img{
+	display: block;
+	width: 100%;
+}
+
+/* 가운데 박스 꾸미기 */
+.slider .slick-current> div{
+	margin: 10px 10px 10px 20px;
+	transition: all 1s;
+}
+
+
+/*이동버튼 꾸미기*/
+.slider .slick-prev:before, 
+.slider .slick-next:before{
+	content:'';/*원래 버튼 없애기*/
+}
+.slider .slick-prev, 
+.slider .slick-next{
+	width:90px;
+	height:90px;
+	z-index: 99;
+}
+.slider .slick-prev{
+	background:url(../img/main/People-prev.png) no-repeat;
+	left:-80px;
+}
+/* .slider .slick-prev:hover{
+	background:url(../images/prev_hover.png) no-repeat;
+} */
+.slider .slick-next{
+	background:url(../img/main/People-next.png) no-repeat;
+	right:-80px;
+}
+/* .slider .slick-next:hover{
+	background:url(../images/next.png) no-repeat;
+} */
+
+/*블릿버튼 꾸미기*/
+.slick-dots li button::before{
+	content: '';/*원래 버튼 없애기*/
+}
+.slider .slick-dots li button{
+	width:10px;
+	height:10px;
+	padding:0;
+	background:pink;
+	border-radius:50%;
+	opacity: 0.5;
+}
+.slider .slick-dots li.slick-active button{
+	background:pink;
+	opacity:1
+}
+
